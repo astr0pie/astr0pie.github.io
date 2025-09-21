@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV Anindya Fayza</title>
+</head>
+<body>
+    <h1>Curriculum Vitae</h1>
+    <section>
+    <h2>ANINDYA FAYZA HASIBUAN </h2>
+    <h3>Kontak:</h3>
+    <ul>
+    <li>Email: annfaay18@gmail.com </li> 
+    <li>Telepon: 0812-1271-1500</li>
+    <li>Alamat: Bekasi, Pondokgede </li>
+</ul>
+    <h3>Pendidikan:</h3>
+    <ul>
+        <li>SMAN 5 Bekasi (2021-2024)</li>
+        <li>Telkom University (2024)</li>
+    </ul>
+    <h3>Experience:</h3>
+    <ul>
+        <li>Panitia English Contest Seksi Hadiah (2022)</li>
+        <li>Panitia "Sharing Is Caring" Seksi Koordinator Lapangan (2022)</li>
+        <li>Panitia English Contest Seksi Logistik (2023)</li>
+    </ul>
+    <h3>Skills:</h3>
+    <ul>
+        <li>Kemampuan komunikasi yang baik</li>
+        <li>Orientasi pada detail dan ketelitian dalam pelaksanaan tugas</li>
+        <li>Prioritasi tugas dan waktu</li>
+        <li>Kemampuan berkolaborasi dalam tim</li>
+    </ul>
+    <h3>Languages:</h3>
+    <ul>
+        <li>Bahasa Indonesia</li>
+        <li>Bahasa Inggris</li>
+    </ul>
+
+</body>
+</html>
