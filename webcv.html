@@ -5,77 +5,182 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CV Anindya Fayza</title>
     <style>
-
-        /*css nya ni*/
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
 
         :root {
-            --card: #ffffff; 
-            --shadow: 0 4px 8px rgba(8, 11, 13, 0.564); 
-            --lebar-maks: 700px;
+            --latar-belakang: #f0f2f5;
+            --kotak-cv: #ffffff;
+            --bayangan: rgba(0, 0, 0, 0.1);
+            --garis-highlight: #2a4665;
+            --judul-utama: #1a202c;
+            --judul-sub: #39445a;
+            --teks-biasa: #3b465e;
+            --lebar-maks: 800px;
         }
 
-        body { /*css buat seluruh halaman*/
-            font-family: Verdana, sans-serif;
-            margin: 40px;
-            line-height: 1.6;
-            background-color: #ffffff;
-            color: #000000;
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: var(--latar-belakang);
+            background-image: linear-gradient(45deg, rgba(152, 173, 219, 0.694) 25%, transparent 25%, transparent 75%, rgba(51, 50, 50, 0.05) 75%, rgba(72, 72, 72, 0.05) 100%);
+            background-size: 20px 20px;
+            color: var(--teks-biasa);
+            margin: 0;
+            padding: 40px 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            box-sizing: border-box;
         }
+
         .cvfay {
-            max-width: 700px; 
+            max-width: var(--lebar-maks);
             width: 100%;
-            background: var(--card); 
-            border-radius: 10px; 
-            box-shadow: var(--shadow); 
-            padding: 24px; 
+            background: linear-gradient(135deg, #d4d9e0 0%, #cfd8e6 100%);
+            border-radius: 12px;
+            box-shadow: 0 30px 30px var(--bayangan);
+            padding: 40px;
+            transition: transform 0.3s ease-in-out;
+            border: 1px solid #808dc7;
         }
+
+        .cvfay:hover {
+            transform: translateY(-8px);
+        }
+
         h1 {
+            font-size: 2.5em;
             text-align: center;
-            color: #0e0b0b;
+            color: var(--judul-utama);
+            margin-bottom: 30px; 
+            font-weight: 600;
         }
-        h2, h3 {
-            color: #6b94bd;
-            border-bottom: 2px solid #8aadc4;
-            padding-bottom: 5px;
-            margin-top: 25px;
+        .header-cv {
+            display: flex; 
+            align-items: center; 
+            margin-bottom: 30px; 
         }
+
+        .foto-profil {
+            width: 170px; 
+            height: 200px; 
+            border-radius: 8px; 
+            object-fit: cover;
+            margin-right: 30px; 
+            border: 0px solid var(--garis-highlight); 
+            flex-shrink: 0; 
+        }
+
+        .info-diri {
+            flex-grow: 1;}
+
+        .info-diri h2 {
+            font-size: 1.8em; 
+            margin-top: 0; 
+            margin-bottom: 5px; 
+            border-bottom: none; 
+            color: var(--judul-utama);}
+
+        .info-diri h3 {
+             margin-top: 0;
+             margin-bottom: 5px;
+             font-size: 1.1em;
+             color: var(--judul-sub);
+             font-weight: 400;}
+        
+        .info-diri .kontak {
+            margin-top: 10px;
+            padding-left: 0;}
+    
+        h2 {
+            font-size: 1.5em;
+            color: var(--judul-sub);
+            border-bottom: 1px solid var(--garis-highlight);
+            padding-bottom: 8px;
+            margin-top: 30px;
+            margin-bottom: 15px;
+            font-weight: 600;
+        }
+
+        h3 {
+            font-size: 1.5em;
+            color: var(--judul-sub);
+            border-bottom: 1px solid var(--garis-highlight);
+            margin-top: 20px;
+            margin-bottom: 10px;
+            font-weight: 600;
+        }
+
         ul {
             padding: 0;
-        }
-        li {
-            margin-bottom: 10px;
+            list-style-type: none;
         }
 
-        /*dah selesai css nya*/
+        li {
+            margin-bottom: 8px;
+            line-height: 1.6;
+            color: var(--teks-biasa); 
+        }
+
+        
+        .kontak li {
+            position: relative;
+            padding-left: 25px;
+        }
+
+        .kontak li::before {
+            content: '•'; 
+            position: absolute;
+            left: 0;
+            color: var(--garis-highlight);
+            font-size: 1.2em;
+            top: 50%;
+            transform: translateY(-50%);
+        }
 
     </style>
 </head>
 <body>
-    <h1>Curriculum Vitae</h1>
-    <section class = cvfay>
-    <h2>ANINDYA FAYZA HASIBUAN </h2>
-    <h3>Kontak:</h3>
-    <ul>
-    <li>Email: annfaay18@gmail.com </li> 
-    <li>Telepon: 0812-1271-1500</li>
-    <li>Alamat: Bekasi, Pondokgede </li>
-</ul>
-    <h3>Pendidikan:</h3>
-    <ul>
-        <li>SMAN 5 Bekasi (2021-2024)</li>
-        <li>Telkom University (2024)</li>
-    </ul>
-    <h3>Experience:</h3>
-    <ul>
-        <li>Panitia English Contest Seksi Hadiah (2022)</li>
-        <li>Panitia "Sharing Is Caring" Seksi Koordinator Lapangan (2022)</li>
-        <li>Panitia English Contest Seksi Logistik (2023)</li>
-    </ul>
-    <h3>Skills:</h3>
-    <ul>
-        <li>Kemampuan komunikasi yang baik</li>
-        <li>Orientasi pada detail dan ketelitian dalam pelaksanaan tugas</li>
-        <li>Prioritasi tugas dan waktu</li>
+    <section class="cvfay">
+        <div class="header-cv">
+            <img class="foto-profil" src="fotoku.jpg" alt="Foto Profil Anindya Fayza">
+            <div class="info-diri">
+                <h2>ANINDYA FAYZA HASIBUAN </h2>
+                <h3>Kontak:</h3>
+                <ul class="kontak">
+                    <li>Email: annfaay18@gmail.com </li> 
+                    <li>Telepon: 0812-1271-1500</li>
+                    <li>Alamat: Bekasi, Pondokgede </li>
+                </ul>
+            </div>
+        </div>
+
+        <h3>Pendidikan:</h3>
+        <ul>
+            <li>SMAN 5 Bekasi (2021-2024)</li>
+            <li>Telkom University (2024)</li>
+        </ul>
+        <h3>Experience:</h3>
+        <ul>
+            <li>Panitia English Contest Seksi Hadiah (2022)</li>
+            <li>Panitia "Sharing Is Caring" Seksi Koordinator Lapangan (2022)</li>
+            <li>Panitia English Contest Seksi Logistik (2023)</li>
+        </ul>
+        <h3>Skills:</h3>
+        <ul>
+            <li>Kemampuan komunikasi yang baik</li>
+            <li>Orientasi pada detail dan ketelitian dalam pelaksanaan tugas</li>
+            <li>Prioritasi tugas dan waktu</li>
+            <li>Kemampuan berkolaborasi dalam tim</li>
+        </ul>
+        <h3>Languages:</h3>
+        <ul>
+            <li>Bahasa Indonesia</li>
+            <li>Bahasa Inggris</li>
+        </ul>
+    </section>
+</body>
+</html>
         <li>Kemampuan berkolaborasi dalam tim</li>
     </ul>
     <h3>Languages:</h3>
